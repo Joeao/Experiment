@@ -21,25 +21,7 @@ $(document).ready(function() {
 	};
 
 	var processResults = function(Results) {
-		var objects = {
-			bl : {left: [], top:[]},
-			br : {left: [], top:[]},
-			de : {left: [], top:[]},
-			bl : {left: [], top:[]},
-			br : {left: [], top:[]},
-			de : {left: [], top:[]},
-			dx : {left: [], top:[]},
-			ke : {left: [], top:[]},
-			ma : {left: [], top:[]},
-			mi : {left: [], top:[]},
-			mp : {left: [], top:[]},
-			pa : {left: [], top:[]},
-			pe : {left: [], top:[]},
-			qu : {left: [], top:[]},
-			th : {left: [], top:[]},
-			wa : {left: [], top:[]},
-			wi : {left: [], top:[]}
-		}
+		var objects = {};
 
 		$.each(Results, function(i, Result) {
 			var Result = JSON.parse(Result);
@@ -47,6 +29,8 @@ $(document).ready(function() {
 			delete Result['desc'];
 
 			$.each(Result, function(j, ObjPiece) {
+				objects[j] = {left: [], top:[]};
+				
 				objects[j].left.push(ObjPiece.x);
 				objects[j].top.push(ObjPiece.y);
 			});
