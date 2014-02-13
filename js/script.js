@@ -22,8 +22,8 @@ $(document).ready(function() {
 			var id = $(obj).attr('id');
 			var position = $(obj).position()
 			var post = {
-				x: parseInt(position.left),
-				y: parseInt(position.top)
+				x: parseInt(position.left) / $('#wall').width() * 100,
+				y: parseInt(position.top) / $('#wall').height() * 100
 			}
 
 			postsObj[id] = post;
@@ -90,7 +90,7 @@ $(document).ready(function() {
 		switch (stage) {
 			case 1:
 				id = "mi";
-				$('#status-text p').text('She looks nice and comfortable. Now here Ed Miliband, move him and make him feel at home');
+				$('#status-text p').text('Now here Ed Miliband, move him and make him feel at home.');
 				break;
 			case 2:
 				id = "bl";
@@ -141,7 +141,7 @@ $(document).ready(function() {
 				$('#status-text p').text("The guy who plays Sheldon Cooper. Hit next when you've moved him");
 				break;
 			case 14:
-				id = "ma";
+				id = "mg";
 				$('#status-text p').text("Last one. Hit next when you're done.");
 				break;
 			case 15:

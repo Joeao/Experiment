@@ -72,11 +72,11 @@ $(document).ready(function() {
 	var drawResults = function(Objects) {
 		$.each(Objects, function(i, obj) {
 			$(window[i]).css({
-				left: obj.left,
-				top: obj.top
+				left: obj.left + '%',
+				top: obj.top + '%'
 			});
 		});
-	}
+	};
 
 	var setCurrentResult = function(amount) {
 		$('#currentResult').val(amount);
@@ -84,8 +84,6 @@ $(document).ready(function() {
 
 	var setResultAmount = function() {
 		var amount = getResult('resultAmount');
-
-		console.log(amount)
 
 		$('#resultAmount').val(amount);
 	};
