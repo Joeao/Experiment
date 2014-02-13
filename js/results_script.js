@@ -85,6 +85,8 @@ $(document).ready(function() {
 	var setResultAmount = function() {
 		var amount = getResult('resultAmount');
 
+		console.log(amount)
+
 		$('#resultAmount').val(amount);
 	};
 

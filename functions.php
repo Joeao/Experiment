@@ -8,7 +8,7 @@
 
 	    $file = array_rand($files);
 
-	    $array = [$file, file_get_contents($files[$file])];
+	    $array = array($file, file_get_contents($files[$file]));
 
 	    return $array;
 	};
@@ -22,7 +22,7 @@
 	function getRandomResults($int) {
 		global $files;
 
-		$array = [];
+		$array = array();
 
 		// If int is bigger than amount of files, set int to amount of files
 		if(sizeof($files) < $int) {
@@ -44,7 +44,7 @@
 	function getAllResults() {
 		global $files;
 
-		$array = [];
+		$array = array();
 
 		$int = sizeof($files);
 
