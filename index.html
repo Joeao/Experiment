@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Experiment</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Roboto:300,500' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+
+
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+
+    <script src="./js/jquery.js"></script>
+
+    <script src="./js/jquery.pep.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</head>
+<body>
+	<div id="wall">
+		<img id="qu" class="image green pep" src="./images/queen.png" />
+
+		<img id="mi" class="image green pep" src="./images/miliband.png" />
+
+		<img id="th" class="image green pep" src="./images/thatcher.png" />
+
+		<img id="br" class="image green pep" src="./images/brand.png" />
+
+		<img id="pe" class="image green pep" src="./images/perry.png" />
+
+		<img id="mp" class="image green pep" src="./images/mperry.png" />
+
+		<img id="ke" class="image green pep" src="./images/kenniff.png" />
+
+		<img id="de" class="image green pep" src="./images/dedede.png" />
+
+		<img id="dx" class="image green pep" src="./images/dexter.png" />
+
+		<img id="pa" class="image green pep" src="./images/parsons.png" />
+
+		<img id="ma" class="image green pep" src="./images/mario.png" />
+
+		<img id="bl" class="image green pep" src="./images/black.png" />
+
+		<img id="wa" class="image green pep" src="./images/watson.png" />
+
+		<img id="wi" class="image green pep" src="./images/wilson.png" />
+
+		<img id="ma" class="image green pep" src="./images/marge.png" />
+	</div>
+
+	<div id="ui">
+		<div id="welcome-box" class="status-box">
+			<h3>Experiment</h3>
+			<p>In this experiment, you will be given a number of objects. You are asked to categorise these objects as you please.</p>
+			<p>The way you categorise will be stored and kept completely anonymous. Results will be made by detecting trends in the way people categorise.</p>
+			<p>By continuing, you are agreeing that your results can be saved and used for this experiment. Your Results will not be passed to any third parties.</p>
+			<div class="continue btn btn-primary">
+				<p>Continue</p>
+			</div>
+		</div>
+
+		<div id="final-box" class="status-box">
+			<h3>One last things</h3>
+			<p>Could you please briefly describe your thought process behind how you categorised the images?</p>
+			<textarea id="explanation" type="text" placeholder="Explanation"></textarea>
+			<div class="continue btn btn-primary">
+				<p>Continue</p>
+			</div>
+		</div>
+
+		<div id="status-bar" class="progress progress-striped">
+		 	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+			</div>
+		</div>
+
+		<div id="status-text">
+			<p>This is the Queen. Drag her where ever you'd think suitable. Click Next when you're done.</p>
+		</div>
+
+		<div id="next" data-stage="1">
+			<p>Next</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+html {
+	height:100%;
+	width:100%;
+}
+
+body {
+	height:100%;
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	color:#272727;
+	overflow: hidden;
+}
+
+#wall {
+	width:100%;
+	height:100%;
+	background:#95a5a6;
+}
+
+#amendments-box,
+#final-box {
+	left:200%;
+}
+
+.status-box {
+	width: 700px;
+	height: 300px;
+	background: rgba(255,255,255,0.95);
+	border-radius: 3px;
+	padding: 20px 40px;
+	text-align: justify;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -350px;
+}
+
+	.status-box h3 {
+		margin-top:0;
+	}
+
+	.status-box .continue {
+		width: 200px;
+		bottom:15px;
+		left:50%;
+		margin-left:-100px;
+		position: absolute;
+		padding: 15px;
+		color: #fff;
+		text-align: center;
+		border-radius:3px;
+		cursor: pointer;
+	}
+
+		.status-box .continue p {
+			margin:0;
+			font-size:24px;
+			font-weight: 300;
+		}
+
+#status-bar {
+	position:fixed;
+	width:80%;
+	top:5px;
+	margin-left:10%;
+	height:15px;
+}
+
+	#status-bar .progress-bar {
+		-webkit-transition: width .2s ease;
+		transition: width .2s ease;
+	}
+
+	.image {
+		left:150%;
+		border-radius: 2px;
+		width:12%;
+		height:auto;
+		position: absolute;
+		top:20%;
+		border-top:5px solid #2ecc71;
+		box-shadow: 0 0 2px 0 #444;
+	}
+
+	.pep {
+		cursor: hand;
+		cursor: grab;
+		cursor: -moz-grab;
+		cursor: -webkit-grab;
+	}
+
+		.pep:active {
+			cursor: hand;
+			cursor: grabbing;
+			cursor: -moz-grabbing;
+			cursor: -webkit-grabbing;
+		}
+
+#status-text {
+	font-size:24px;
+	color:#fff;
+	position: absolute;
+	width:950px;
+	margin-left:-475px;
+	left:150%;
+	top:20px;
+	text-align: center;
+	font-weight: 300;
+}
+
+#next {
+	background: #34495e;
+	position: absolute;
+	right:-100%;
+	bottom:20px;
+	padding: 10px 40px;
+	color: #fff;
+	text-align: center;
+	border-radius:3px;
+	cursor: pointer;
+}
+
+	#next p {
+		margin:0;
+		font-size:24px;
+		font-weight: 300;
+	}
+
+#explanation {
+	width:100%;
+	height: 100px;
+	resize: none;
+}
+
+#navbar {
+	position: fixed;
+	right:10px;
+	top:10px;
+}
+
+	#navbar .container {
+		width:auto;
+		text-align: center;
+		padding:10px;
+	}
+
+	#navbar input {
+		display: inline-block;
+		width: 50px;
+		text-align: center;
+	}
+
+	#navbar #resultinput {
+		margin-bottom: 10px;
+	}
