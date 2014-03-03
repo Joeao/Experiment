@@ -9,5 +9,4 @@
 
 		fwrite($handle, stripslashes($entry));
 	}
-
 ?>
